@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PulsePay Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1 id="page-title">Wallet</h1>
+    </header>
+    <main id="main-content">
+      <!-- Dynamic content will be injected here -->
+    </main>
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav">
+      <button class="nav-btn" data-page="wallet"><span>💳</span><br>Wallet</button>
+      <button class="nav-btn" data-page="transactions"><span>📄</span><br>Transactions</button>
+      <button class="nav-btn" data-page="settings"><span>⚙️</span><br>Settings</button>
+    </nav>
+  </div>
+  <!-- Simulated NFC Tap Button -->
+  <button id="simulate-nfc" class="simulate-nfc">Simulate NFC Tap</button>
+  <!-- NFC Confirmation Popup -->
+  <div id="nfc-popup" class="nfc-popup hidden">
+    <div class="popup-content">
+      <h3>Confirm Payment</h3>
+      <p>Merchant: <span id="merchant">Coffee Shop</span></p>
+      <p>Amount: <span id="amount">$4.50</span></p>
+      <button id="confirm-btn" class="confirm">Confirm</button>
+      <button id="cancel-btn" class="cancel">Cancel</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
